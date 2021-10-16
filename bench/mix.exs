@@ -21,9 +21,9 @@ defmodule Bench.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_litedb, "~> 0.9.1"},
+      {:ex_litedb, "~> 0.9.2"},
       {:exqlite, "~> 0.7.5"},
-      {:raw_sqlite3, "~> 1.0.4"},
+      # {:raw_sqlite3, "~> 1.0.4"}, ## has issues on macos (arm)
       {:benchee, "~> 1.0"}
     ]
   end
